@@ -1,10 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body * {
-  font-family: "Epilogue", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
+header {
+  padding: 2rem 1.25rem;
+}
+.section {
+  
+}
+image {
+  max-width: 100%;
+  width: 100%;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#grid {
+  display: grid;
+  gap: 120px ;
+}
+
+body {
+  font-size: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.rightColumn {
+  height: 100%;
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-auto-rows: repeat(3,1fr);
+  justify-content: start;
+  padding: 2rem;
+}
+
+p {
+  color: hsl(236, 13%, 42%);
+}
