@@ -16,21 +16,24 @@ text-align: center;
 color: hsl(228, 45%, 44%);
 }
 </style>
-  <script type="module" crossorigin src="/assets/index-5a6fda72.js"></script>
-  <link rel="stylesheet" href="/assets/index-42a498a0.css">
+  <script type="module" crossorigin src="/assets/index-6c62f26e.js"></script>
+  <link rel="stylesheet" href="/assets/index-2be08965.css">
 </head>
 <body class="h-screen m-0" style="background-color:(36, 100%, 99%);">
-<header class="flex justify-between items center color-gray-500 bg-(36, 100%, 99%)">
+<header class="flex justify-between items-center color-gray-500 bg-(36, 100%, 99%)">
 <div class="header_logo">
 <img src="/assets/logo-2ae3d696.svg" />
 </div>
-<nav class="flex gap-3">
-<ul>Home</ul>
-<ul>New</ul>
-<ul>Popular</ul>
-<ul>Trending</ul>
-<ul>Categories</ul>
+<nav class="hidden md:flex flex-row gap-x-6 text-gray-500">
+    <button class="btn">Home</button>
+    <button class="btn">New</button>
+    <button class="btn">Popular</button>
+    <button class="btn">Trending</button>
+    <button class="btn">Categories</button>
 </nav>
+<button class="btn flex md:hidden">
+    <img src="/assets/icon-menu-09147dcd.svg">
+</button>
 </header>
 
 <div class="grid grid-row-1 md: grid-col-3 gap-4 gap-y-5" id ="grid">
@@ -74,25 +77,25 @@ color: hsl(228, 45%, 44%);
 </section>
 
 <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-10">
-<article class="flex flex-row">
-<img src="/assets/image-retro-pcs-f5b001aa.jpg" />
-<div class="p-3 flex flex-col">
+<article class="col-span-2 md:col-span-1 container flex flex-row gap-x-3">
+<img class="w-38" src="/assets/image-retro-pcs-f5b001aa.jpg" />
+<div class="flex flex-col justify-between">
 <h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">01</h2>
 <h3 style="font-size: larger; font-weight: bold;">Reviving Retro PCs</h3>
 <p>What happens when old PCs are given modern upgrades?</p>
 </div>
 </article>
-<article class="flex flex-row">
-<img src="/assets/image-top-laptops-bc1cbac8.jpg" />
-<div class="p-3 flex flex-col">
+<article class="col-span-2 md:col-span-1 flex flex-row gap-x-3">
+<img class="w-38" src="/assets/image-top-laptops-bc1cbac8.jpg" />
+<div class="flex flex-col justify-between">
 <h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">02</h2>
 <h3 style="font-size: larger; font-weight: bold">Top 10 Laptops of 2022</h3>
 <p>Our best picks for various needs and budgets.</p>
 </div>
 </article>
-<article class="flex flex-row">
-<img src="/assets/image-gaming-growth-77ea9e27.jpg" />
-<div class="p-3 flex flex-col">
+<article class="col-span-2 md:col-span-1 flex flex-row gap-x-3">
+<img class="w-38" src="/assets/image-gaming-growth-77ea9e27.jpg" />
+<div class="flex flex-col justify-between">
 <h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">03</h2>
 <h3 style="font-size: larger; font-weight: bold;">The Growth of Gaming</h3>
 <p>How the pandemic has sparked fresh opportunities.</p>
