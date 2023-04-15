@@ -1,108 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==" />
-<title>Frontend Mentor | News homepage</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==" />
+    
+    <title>Frontend Mentor | News homepage</title>
+    
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-<style>
-.attribution {
-font-size: 11px;
-text-align: center;
-}
-
-.attribution a {
-color: hsl(228, 45%, 44%);
-}
-</style>
-  <script type="module" crossorigin src="/assets/index-6c62f26e.js"></script>
-  <link rel="stylesheet" href="/assets/index-2be08965.css">
-</head>
-<body class="h-screen m-0" style="background-color:(36, 100%, 99%);">
-<header class="flex justify-between items-center color-gray-500 bg-(36, 100%, 99%)">
-<div class="header_logo">
-<img src="/assets/logo-2ae3d696.svg" />
-</div>
-<nav class="hidden md:flex flex-row gap-x-6 text-gray-500">
-    <button class="btn">Home</button>
-    <button class="btn">New</button>
-    <button class="btn">Popular</button>
-    <button class="btn">Trending</button>
-    <button class="btn">Categories</button>
-</nav>
-<button class="btn flex md:hidden">
-    <img src="/assets/icon-menu-09147dcd.svg">
-</button>
-</header>
-
-<div class="grid grid-row-1 md: grid-col-3 gap-4 gap-y-5" id ="grid">
-<section class="section grid grid-flow-row auto-rows-min gap-8 grid-row-1 md:grid-cols-3 ;">
-<div class="md:order-1 order-1 col-span-2 ">
-<picture>
-<source media="(min-width: 760px)" srcset="/assets/image-web-3-desktop-80273c80.jpg ">
-<img src="/assets/image-web-3-mobile-83b3ba87.jpg" />
-</picture>
-
-</div>
-<div class="rightColumn md:order-2 order-4 col-span-2 md:col-span-1 md:row-span-2 " style="background-color: hsl(240, 100%, 5%); margin-top: 0; ">
-<div>
-<h2 class="NEW" style=" color: hsl(35, 77%, 62%); font-size: 3rem;">New</h2>
-</div>
-<div>
-<article>
-<h3 class="pt-8 text-main hover:text-hover" style= "cursor: pointer;">Hydrogen VS Electric Cars</h3>
-<p style=" border-bottom: 1px solid hsl(236, 13%, 42%);"> Will hydrogen-fueled cars ever catch up to EVs?</p>
-</article>
-</div>
-<div>
-<h3 class="pt-8 text-main hover:text-hover" style="cursor: pointer;"> The Downsides of AI Artistry</h3>
-<p style="border-bottom: 1px solid hsl(236, 13%, 42%);">What are the possible adverse effects of on-demand AI image generation?</p>
-</article>
-</div>
-<div>
-<h3 class="pt-8 text-main hover:text-hover" style="cursor: pointer;">Is VC Funding Drying Up?</h3>
-<p class="pb-6">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-</article>
-</div>
-</div>
-<div class="md:order-3 order-2 col-span-2 md:col-span-1">
-<h1 class="pr-38" style="font-size: 3rem; font-weight: 800;">The Bright Future of Web 3.0?</h1>
-</div>
-<div class="md:order-4 order-3 col-span-2 md:col-span-1 flex flex-col justify-between items-start">
-<p class="py-8">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-<button class=" w-60 hover:bg-hsl(240, 100%, 5%)" style="padding:1rem ;size: 1rem;font-weight: bold; letter-spacing: 0.2rem; text-transform: uppercase; color: white; background-color: hsl(5, 85%, 63%);">Read more</button>
-</div>
-
-</section>
-
-<div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-10">
-<article class="col-span-2 md:col-span-1 container flex flex-row gap-x-3">
-<img class="w-38" src="/assets/image-retro-pcs-f5b001aa.jpg" />
-<div class="flex flex-col justify-between">
-<h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">01</h2>
-<h3 style="font-size: larger; font-weight: bold;">Reviving Retro PCs</h3>
-<p>What happens when old PCs are given modern upgrades?</p>
-</div>
-</article>
-<article class="col-span-2 md:col-span-1 flex flex-row gap-x-3">
-<img class="w-38" src="/assets/image-top-laptops-bc1cbac8.jpg" />
-<div class="flex flex-col justify-between">
-<h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">02</h2>
-<h3 style="font-size: larger; font-weight: bold">Top 10 Laptops of 2022</h3>
-<p>Our best picks for various needs and budgets.</p>
-</div>
-</article>
-<article class="col-span-2 md:col-span-1 flex flex-row gap-x-3">
-<img class="w-38" src="/assets/image-gaming-growth-77ea9e27.jpg" />
-<div class="flex flex-col justify-between">
-<h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">03</h2>
-<h3 style="font-size: larger; font-weight: bold;">The Growth of Gaming</h3>
-<p>How the pandemic has sparked fresh opportunities.</p>
-</div>
-</article>
-</div>
-</div>
-<div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Mayazavrik</a>. </div>
-</body>
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-6f5f1ff6.js"></script>
+    <link rel="stylesheet" href="/assets/index-78470572.css">
+  </head>
+  <body class="h-screen m-0" style="background-color:(36, 100%, 99%);">
+    <header class="header flex justify-between items-center color-gray-500 bg-(36, 100%, 99%)">
+      <div class="header_logo">
+        <img src="/assets/logo-2ae3d696.svg" />
+      </div>
+      <nav class="navigation w-full items-center justify-end px-3 gap-x-6 text-gray-500">
+        <div id="menu-close" class="menu_close btn flex ">
+          <img src="/assets/icon-menu-close-018fbc42.svg" />
+        </div>
+        
+   
+        <ul id="menu-list" class="menu_list">
+          <button class="btn">Home</button>
+          <button class="btn">New</button>
+          <button class="btn">Popular</button>
+          <button class="btn">Trending</button>
+          <button class="btn">Categories</button>
+        </ul>
+      </nav>
+      <button class="menu-button btn flex "> 
+          
+        <button id="menu-button" class="menu2 "
+        ><img src="/assets/icon-menu-09147dcd.svg" /></button>
+    
+    </header>
+    <div class="grid grid-row-1 md: grid-col-3 gap-4 gap-y-5" id="grid">
+      <section class="section grid grid-flow-row auto-rows-min gap-8 grid-row-1 md:grid-cols-3 ;">
+        <div class="md:order-1 order-1 col-span-2 ">
+          <picture>
+            <source media="(min-width: 760px)" srcset="/assets/image-web-3-desktop-80273c80.jpg "><img src="/assets/image-web-3-mobile-83b3ba87.jpg" />
+          </picture>
+        </div>
+        <div class="rightColumn md:order-2 order-4 col-span-2 md:col-span-1 md:row-span-2 " style="background-color: hsl(240, 100%, 5%); margin-top: 0; ">
+          <div>
+            <h2 class="NEW" style=" color: hsl(35, 77%, 62%); font-size: 3rem;">New</h2>
+          </div>
+          <div>
+            <article>
+              <h3 class="pt-8 text-main hover:text-hover" style="cursor: pointer;">Hydrogen VS Electric Cars</h3>
+              <p style=" border-bottom: 1px solid hsl(236, 13%, 42%);"> Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+          </div>
+          <div>
+            <h3 class="pt-8 text-main hover:text-hover" style="cursor: pointer;"> The Downsides of AI Artistry</h3>
+            <p style="border-bottom: 1px solid hsl(236, 13%, 42%);">What are the possible adverse effects of on-demand AI image generation?</p>
+            </article>
+          </div>
+          <div>
+            <h3 class="pt-8 text-main hover:text-hover" style="cursor: pointer;">Is VC Funding Drying Up?</h3>
+            <p class="pb-6">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </article>
+          </div>
+        </div>
+        <div class="md:order-3 order-2 col-span-2 md:col-span-1">
+          <h1 class="pr-38" style="font-size: 3rem; font-weight: 800;">The Bright Future of Web 3.0?</h1>
+        </div>
+        <div class="md:order-4 order-3 col-span-2 md:col-span-1 flex flex-col justify-between items-start">
+          <p class="py-8">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p><button class=" w-60 hover:bg-hsl(240, 100%, 5%)" style="padding:1rem ;size: 1rem;font-weight: bold; letter-spacing: 0.2rem; text-transform: uppercase; color: white; background-color: hsl(5, 85%, 63%);">Read more</button>
+        </div>
+      </section>
+      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-10">
+        <article class="col-span-2 md:col-span-1 container flex flex-row gap-x-3">
+            
+                <img class="row_image" src="/assets/image-retro-pcs-f5b001aa.jpg" />
+            
+          <div class="flex flex-col justify-between">
+            <h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">01</h2>
+            <h3 style="font-size: larger; font-weight: bold;">Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+        <article class="col-span-2 md:col-span-1 flex flex-row gap-x-3"><img class="row_image" src="/assets/image-top-laptops-bc1cbac8.jpg" />
+          <div class="flex flex-col justify-between">
+            <h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">02</h2>
+            <h3 style="font-size: larger; font-weight: bold">Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article class="col-span-2 md:col-span-1 flex flex-row gap-x-3"><img src="images/image-gaming-growth.jpg " width="80" height="122" />
+          <div class="flex flex-col justify-between">
+            <h2 style="color: hsl(236, 13%, 42%); font-size: 2rem; font-weight: bold;">03</h2>
+            <h3 style="font-size: larger; font-weight: bold;">The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Mayazavrik</a>. </div>
+    
 </html>
