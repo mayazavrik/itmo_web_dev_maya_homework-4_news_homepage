@@ -16,7 +16,7 @@ img {
 .btn:hover {
 	color: black;
 }
-.navigation{
+nav{
 	position: relative;
 }
 .header {
@@ -24,7 +24,7 @@ img {
 	align-items: center;
 	justify-content: space-between;
 	padding: 1.25rem;
-	}
+}
 
 .header nav #menu-close {
 	background: transparent;
@@ -36,39 +36,35 @@ img {
 	z-index: 99999;
 	cursor: pointer;
 	visibility: visible;
-	}
-	.header nav.open {
-		position: fixed;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		width: 70%;
-		background-color: white;
-		padding: 1.25rem;
-		opacity: 1;
-		z-index: 99999999999;
-		visibility: visible;
-		}
+}
+.header nav.open {
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 70%;
+	background-color: white;
+	padding: 1.25rem;
+	opacity: 1;
+	z-index: 99999999999;
+	visibility: visible;
+}
 
-		.header nav ul {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			}
+.header nav ul {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
-			.header nav ul button {
-				margin: 1.5rem 0;
-				font-size: 16px;
-				cursor: pointer;
-				}
 
-				.header .menu-button button {
-					background: transparent;
-					outline: none;
-					border: none;
-					cursor: pointer;
-					}
-					
+
+.header .menu-button button {
+	background: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
 /* .header nav ul button:hover {
 color: hsl(5, 85%, 63%);
 } */
@@ -104,9 +100,8 @@ body {
 p {
 	color: hsl(236, 13%, 42%);
 }
-
+/* МАЛЕНЬКИЙ ЭКРАН */
 @media (max-width: 761px) {
-	
 	.menu_list {
 		display: flex;
 		flex-direction: column;
@@ -122,17 +117,32 @@ p {
 	.menu_close {
 		display: block;
 	}
-	.navigation {
+	nav {
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 		justify-content: flex-start;
+		opacity: 0;
+	}
+	.header nav ul button {
+		margin: 1rem 0;
+		font-size: 20px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.row_image{
+		width: 170px;
+	}
+	.row_image1{
+		width: 170px;
+	}
+	.row_image2{
+		width: 170px;
 	}
 }
 
+/* БОЛЬШОЙ ЭКРАН */
 @media (min-width: 762px) {
-	
-		
 	.menu_list {
 		display: flex;
 		flex-direction: row;
@@ -144,8 +154,27 @@ p {
 	.menu_close {
 		display: none;
 	}
-	.navigation {
+	.header nav ul button {
+		margin: 1.5rem 0;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	nav {
 		display: flex;
 		flex-direction: row;
+		opacity: 1;
 	}
+	.row_image{
+		width: 300px;
+	}
+	.row_image1{
+		width: 305px;
+		
+	}
+	.row_image2{
+		width: 270px;
+	}
+
+	
+	
 }
