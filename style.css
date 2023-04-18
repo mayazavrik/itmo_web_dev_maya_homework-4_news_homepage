@@ -101,6 +101,8 @@ p {
 	color: hsl(236, 13%, 42%);
 }
 /* МАЛЕНЬКИЙ ЭКРАН */
+
+
 @media (max-width: 761px) {
 	.menu_list {
 		display: flex;
@@ -130,15 +132,12 @@ p {
 		font-weight: bold;
 		cursor: pointer;
 	}
+
+	
 	.row_image{
-		width: 170px;
+		flex: 0 0 150px;
 	}
-	.row_image1{
-		width: 170px;
-	}
-	.row_image2{
-		width: 170px;
-	}
+	
 }
 
 /* БОЛЬШОЙ ЭКРАН */
@@ -165,16 +164,8 @@ p {
 		opacity: 1;
 	}
 	.row_image{
-		width: 300px;
+		flex: 0 0 170px;
 	}
-	.row_image1{
-		width: 305px;
-		
-	}
-	.row_image2{
-		width: 270px;
-	}
-
 	
 	
 }
