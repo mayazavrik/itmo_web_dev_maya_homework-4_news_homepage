@@ -16,7 +16,7 @@ img {
 .btn:hover {
 	color: black;
 }
-nav{
+nav {
 	position: relative;
 }
 .header {
@@ -49,14 +49,15 @@ nav{
 	z-index: 99999999999;
 	visibility: visible;
 }
+.header_logo {
+	flex-shrink: 0;
+}
 
 .header nav ul {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
-
-
 
 .header .menu-button button {
 	background: transparent;
@@ -102,7 +103,6 @@ p {
 }
 /* МАЛЕНЬКИЙ ЭКРАН */
 
-
 @media (max-width: 761px) {
 	.menu_list {
 		display: flex;
@@ -133,11 +133,9 @@ p {
 		cursor: pointer;
 	}
 
-	
-	.row_image{
+	.row_image {
 		flex: 0 0 150px;
 	}
-	
 }
 
 /* БОЛЬШОЙ ЭКРАН */
@@ -163,9 +161,7 @@ p {
 		flex-direction: row;
 		opacity: 1;
 	}
-	.row_image{
+	.row_image {
 		flex: 0 0 170px;
 	}
-	
-	
 }
